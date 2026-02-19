@@ -38,7 +38,7 @@ export default function RootLayout() {
         <Stack.Screen name="index" />
         <Stack.Screen name="(tabs)" />
       </Stack>
-      <StatusBar style="dark" backgroundColor="transparent" translucent />
+      <StatusBar style="dark" />
     </>
   );
 }
