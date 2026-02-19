@@ -1,8 +1,8 @@
 import { View, ViewProps, StyleSheet } from 'react-native';
-import { Colors } from '../constants/Colors';
+import { Colors } from '@/constants/Colors';
 
 interface ThemedViewProps extends ViewProps {
-  variant?: 'default' | 'surface';
+  variant?: 'default' | 'surface' | 'warm';
 }
 
 export function ThemedView({ variant = 'default', style, ...props }: ThemedViewProps) {
@@ -15,5 +15,8 @@ const styles = StyleSheet.create({
   },
   surface: {
     backgroundColor: Colors.surface,
+  },
+  warm: {
+    backgroundColor: Colors.surfaceWarm,
   },
 });
